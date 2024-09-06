@@ -1,0 +1,294 @@
+2024-09-05 16:41:58,082 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-05 16:47:05,919 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-05 16:48:14,625 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-05 16:48:34,145 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-05 16:49:23,375 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:21:28,075 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:22:18,177 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:23:12,809 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:24:13,973 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:26:56,998 django.utils.autoreload INFO H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\diningbot\config\settings.py changed, reloading.
+2024-09-06 08:26:57,640 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:27:03,525 django.request WARNING Not Found: /
+2024-09-06 08:27:03,526 django.server WARNING "GET / HTTP/1.1" 404 2517
+2024-09-06 08:27:04,260 django.request WARNING Not Found: /favicon.ico
+2024-09-06 08:27:04,261 django.server WARNING "GET /favicon.ico HTTP/1.1" 404 2568
+2024-09-06 08:27:23,585 django.server INFO "GET /init HTTP/1.1" 301 0
+2024-09-06 08:27:33,614 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 08:27:34,169 django.server INFO "GET /static/css/style.css HTTP/1.1" 200 5113
+2024-09-06 08:27:34,342 django.server INFO "GET /static/img/ABIMAN-CI-bagic.png HTTP/1.1" 200 10572
+2024-09-06 08:27:34,489 django.server INFO "GET /static/img/fork-white.png HTTP/1.1" 200 6848
+2024-09-06 08:27:34,683 django.server INFO "GET /static/img/kitchen-bg.jpg HTTP/1.1" 200 17019309
+2024-09-06 08:27:34,811 django.server INFO "GET /static/img/touth-black.png HTTP/1.1" 200 5557
+2024-09-06 08:27:36,555 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 08:27:36,660 django.server INFO "GET /static/css/style%2002.css HTTP/1.1" 200 5018
+2024-09-06 08:27:36,663 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 08:27:36,669 django.server INFO "GET /static/img/touth-white-17-18.png HTTP/1.1" 200 5213
+2024-09-06 08:27:36,672 django.server INFO "GET /static/img/shopping-white.png HTTP/1.1" 200 10009
+2024-09-06 08:27:36,696 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 08:27:38,310 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 08:27:38,363 django.server INFO "GET /static/css/style%2004.css HTTP/1.1" 200 7631
+2024-09-06 08:27:38,365 django.server INFO "GET /static/img/left.png HTTP/1.1" 200 7733
+2024-09-06 08:27:38,368 django.server INFO "GET /static/img/right-plus.png HTTP/1.1" 200 7788
+2024-09-06 08:27:38,398 django.server INFO "GET /static/img/again.png HTTP/1.1" 200 9408
+2024-09-06 08:27:38,403 django.server INFO "GET /static/js/order_count.js HTTP/1.1" 200 1010
+2024-09-06 08:27:38,407 django.server INFO "GET /static/img/check.png HTTP/1.1" 200 10761
+2024-09-06 08:27:40,511 django.server INFO "GET /Ramen/db_index00/?count=1 HTTP/1.1" 200 1074
+2024-09-06 08:27:40,586 django.server INFO "GET /static/css/db_style00.css HTTP/1.1" 200 2257
+2024-09-06 08:27:47,357 django.request ERROR Internal Server Error: /Ramen/db_index00/
+Traceback (most recent call last):
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\diningbot\Ramen\views\db_index00.py", line 21, in login_view
+    user = authenticate(request, username=employee_id, password=password)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\contrib\auth\base_user.py", line 46, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\query.py", line 492, in get
+    num = len(clone)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "H:\01.WORK\05.developement\2024\04.Ramen\03.Deployment\venvs\diningbot\lib\site-packages\django\db\backends\sqlite3\base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: auth_user
+2024-09-06 08:27:47,368 django.server ERROR "POST /Ramen/db_index00/ HTTP/1.1" 500 159594
+2024-09-06 08:33:24,974 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 08:43:16,193 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:14:23,002 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:14:26,713 django.request WARNING Not Found: /
+2024-09-06 09:14:26,716 django.server WARNING "GET / HTTP/1.1" 404 2787
+2024-09-06 09:14:27,263 django.request WARNING Not Found: /favicon.ico
+2024-09-06 09:14:27,265 django.server WARNING "GET /favicon.ico HTTP/1.1" 404 2838
+2024-09-06 09:14:42,849 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:14:53,360 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:14:54,777 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 09:14:56,879 django.server INFO "GET /Ramen/db_index00/?count=2 HTTP/1.1" 200 1074
+2024-09-06 09:15:02,357 django.server INFO "POST /Ramen/db_index00/ HTTP/1.1" 200 1243
+2024-09-06 09:15:07,777 django.server INFO "POST /Ramen/db_index00/ HTTP/1.1" 302 0
+2024-09-06 09:15:07,787 django.server INFO "GET /Ramen/pass/20190118/2/ HTTP/1.1" 200 2232
+2024-09-06 09:15:08,041 django.server INFO "GET /static/css/password.css HTTP/1.1" 200 1848
+2024-09-06 09:15:20,112 django.server INFO "POST /Ramen/pass/20190118/2/ HTTP/1.1" 302 0
+2024-09-06 09:15:20,326 django.server INFO "GET /Ramen/index05/2/20190118/ HTTP/1.1" 200 1544
+2024-09-06 09:15:20,375 django.server INFO "GET /static/css/style%2005.css HTTP/1.1" 200 4750
+2024-09-06 09:15:20,377 django.server INFO "GET /static/js/display_count.js HTTP/1.1" 200 627
+2024-09-06 09:15:20,377 django.server INFO "GET /static/img/end.png HTTP/1.1" 200 88644
+2024-09-06 09:15:26,324 django.server INFO "GET /Ramen/?count=2 HTTP/1.1" 200 1676
+2024-09-06 09:17:41,566 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:17:43,090 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 09:17:45,863 django.server INFO "GET /Ramen/db_index00/?count=1 HTTP/1.1" 200 1074
+2024-09-06 09:31:54,241 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:32:02,530 django.request WARNING Not Found: /
+2024-09-06 09:32:02,533 django.server WARNING "GET / HTTP/1.1" 404 2518
+2024-09-06 09:32:02,878 django.request WARNING Not Found: /favicon.ico
+2024-09-06 09:32:02,879 django.server WARNING "GET /favicon.ico HTTP/1.1" 404 2569
+2024-09-06 09:32:14,772 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: '192.168.1.210:30000'. You may need to add '192.168.1.210' to ALLOWED_HOSTS.
+2024-09-06 09:32:14,799 django.request WARNING Bad Request: /
+2024-09-06 09:32:14,800 django.server WARNING "GET / HTTP/1.1" 400 61500
+2024-09-06 09:32:15,243 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: '192.168.1.210:30000'. You may need to add '192.168.1.210' to ALLOWED_HOSTS.
+2024-09-06 09:32:15,261 django.request WARNING Bad Request: /favicon.ico
+2024-09-06 09:32:15,262 django.server WARNING "GET /favicon.ico HTTP/1.1" 400 61558
+2024-09-06 09:32:27,625 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: '192.168.1.210:30000'. You may need to add '192.168.1.210' to ALLOWED_HOSTS.
+2024-09-06 09:32:27,643 django.request WARNING Bad Request: /init
+2024-09-06 09:32:27,644 django.server WARNING "GET /init HTTP/1.1" 400 61544
+2024-09-06 09:32:27,755 django.security.DisallowedHost ERROR Invalid HTTP_HOST header: '192.168.1.210:30000'. You may need to add '192.168.1.210' to ALLOWED_HOSTS.
+2024-09-06 09:32:27,777 django.request WARNING Bad Request: /favicon.ico
+2024-09-06 09:32:27,778 django.server WARNING "GET /favicon.ico HTTP/1.1" 400 61562
+2024-09-06 09:33:24,518 django.utils.autoreload INFO /app/config/settings.py changed, reloading.
+2024-09-06 09:33:25,120 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:33:28,043 django.server INFO "GET /init HTTP/1.1" 301 0
+2024-09-06 09:33:38,082 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:33:38,131 django.server INFO "GET /static/img/ABIMAN-CI-bagic.png HTTP/1.1" 200 10572
+2024-09-06 09:33:38,131 django.server INFO "GET /static/css/style.css HTTP/1.1" 200 5113
+2024-09-06 09:33:38,166 django.server INFO "GET /static/img/touth-black.png HTTP/1.1" 200 5557
+2024-09-06 09:33:38,170 django.server INFO "GET /static/img/fork-white.png HTTP/1.1" 200 6848
+2024-09-06 09:33:39,184 django.server INFO "GET /static/img/kitchen-bg.jpg HTTP/1.1" 200 17019309
+2024-09-06 09:33:39,263 django.request WARNING Not Found: /favicon.ico
+2024-09-06 09:33:39,264 django.server WARNING "GET /favicon.ico HTTP/1.1" 404 2573
+2024-09-06 09:33:43,713 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:33:43,779 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 09:33:43,781 django.server INFO "GET /static/css/style%2002.css HTTP/1.1" 200 5018
+2024-09-06 09:33:43,808 django.server INFO "GET /static/img/touth-white-17-18.png HTTP/1.1" 200 5213
+2024-09-06 09:33:43,812 django.server INFO "GET /static/img/shopping-white.png HTTP/1.1" 200 10009
+2024-09-06 09:33:44,079 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 09:33:45,091 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 09:33:45,169 django.server INFO "GET /static/img/left.png HTTP/1.1" 200 7733
+2024-09-06 09:33:45,169 django.server INFO "GET /static/img/right-plus.png HTTP/1.1" 200 7788
+2024-09-06 09:33:45,172 django.server INFO "GET /static/css/style%2004.css HTTP/1.1" 200 7631
+2024-09-06 09:33:45,197 django.server INFO "GET /static/img/again.png HTTP/1.1" 200 9408
+2024-09-06 09:33:45,199 django.server INFO "GET /static/img/check.png HTTP/1.1" 200 10761
+2024-09-06 09:33:45,201 django.server INFO "GET /static/js/order_count.js HTTP/1.1" 200 1010
+2024-09-06 09:33:47,044 django.server INFO "GET /Ramen/db_index00/?count=1 HTTP/1.1" 200 1074
+2024-09-06 09:33:47,134 django.server INFO "GET /static/css/db_style00.css HTTP/1.1" 200 2257
+2024-09-06 09:33:52,382 django.server INFO "POST /Ramen/db_index00/ HTTP/1.1" 302 0
+2024-09-06 09:33:52,604 django.server INFO "GET /Ramen/index05/1/20190118/ HTTP/1.1" 200 1544
+2024-09-06 09:33:52,679 django.server INFO "GET /static/css/style%2005.css HTTP/1.1" 200 4750
+2024-09-06 09:33:52,684 django.server INFO "GET /static/js/display_count.js HTTP/1.1" 200 627
+2024-09-06 09:33:52,689 django.server INFO "GET /static/img/end.png HTTP/1.1" 200 88644
+2024-09-06 09:33:57,730 django.server INFO "GET /Ramen/?count=1 HTTP/1.1" 200 1676
+2024-09-06 09:38:58,092 django.utils.autoreload INFO /app/config/settings.py changed, reloading.
+2024-09-06 09:39:22,247 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:39:37,946 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:40:37,791 django.server INFO "GET /init HTTP/1.1" 301 0
+2024-09-06 09:40:47,815 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:40:47,879 django.server INFO "GET /static/css/style.css HTTP/1.1" 200 5113
+2024-09-06 09:40:47,884 django.server INFO "GET /static/img/fork-white.png HTTP/1.1" 200 6848
+2024-09-06 09:40:47,885 django.server INFO "GET /static/img/touth-black.png HTTP/1.1" 200 5557
+2024-09-06 09:40:47,885 django.server INFO "GET /static/img/ABIMAN-CI-bagic.png HTTP/1.1" 200 10572
+2024-09-06 09:40:49,132 django.server INFO "GET /static/img/kitchen-bg.jpg HTTP/1.1" 200 17019309
+2024-09-06 09:40:49,225 django.request WARNING Not Found: /favicon.ico
+2024-09-06 09:40:49,227 django.server WARNING "GET /favicon.ico HTTP/1.1" 404 2573
+2024-09-06 09:40:51,946 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:40:52,039 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 09:40:52,040 django.server INFO "GET /static/css/style%2002.css HTTP/1.1" 200 5018
+2024-09-06 09:40:52,043 django.server INFO "GET /static/img/touth-white-17-18.png HTTP/1.1" 200 5213
+2024-09-06 09:40:52,045 django.server INFO "GET /static/img/shopping-white.png HTTP/1.1" 200 10009
+2024-09-06 09:40:52,365 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 09:40:52,934 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 09:40:53,017 django.server INFO "GET /static/img/left.png HTTP/1.1" 200 7733
+2024-09-06 09:40:53,018 django.server INFO "GET /static/css/style%2004.css HTTP/1.1" 200 7631
+2024-09-06 09:40:53,019 django.server INFO "GET /static/img/right-plus.png HTTP/1.1" 200 7788
+2024-09-06 09:40:53,019 django.server INFO "GET /static/img/again.png HTTP/1.1" 200 9408
+2024-09-06 09:40:53,028 django.server INFO "GET /static/img/check.png HTTP/1.1" 200 10761
+2024-09-06 09:40:53,032 django.server INFO "GET /static/js/order_count.js HTTP/1.1" 200 1010
+2024-09-06 09:40:59,391 django.server INFO "GET /Ramen/db_index00/?count=3 HTTP/1.1" 200 1074
+2024-09-06 09:40:59,438 django.server INFO "GET /static/css/db_style00.css HTTP/1.1" 200 2257
+2024-09-06 09:41:04,615 django.server INFO "POST /Ramen/db_index00/ HTTP/1.1" 302 0
+2024-09-06 09:41:04,874 django.server INFO "GET /Ramen/index05/3/20190118/ HTTP/1.1" 200 1544
+2024-09-06 09:41:04,964 django.server INFO "GET /static/css/style%2005.css HTTP/1.1" 200 4750
+2024-09-06 09:41:04,968 django.server INFO "GET /static/js/display_count.js HTTP/1.1" 200 627
+2024-09-06 09:41:04,977 django.server INFO "GET /static/img/end.png HTTP/1.1" 200 88644
+2024-09-06 09:41:10,001 django.server INFO "GET /Ramen/?count=3 HTTP/1.1" 200 1676
+2024-09-06 09:41:19,271 django.utils.autoreload INFO /app/config/settings.py changed, reloading.
+2024-09-06 09:41:19,718 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:41:26,552 django.utils.autoreload INFO /app/config/settings.py changed, reloading.
+2024-09-06 09:41:27,052 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:41:45,838 django.utils.autoreload INFO /app/config/settings.py changed, reloading.
+2024-09-06 09:41:46,267 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:42:04,222 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:43:10,208 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 09:43:22,450 django.request WARNING Not Found: /
+2024-09-06 09:43:22,451 django.server WARNING "GET / HTTP/1.1" 404 2522
+2024-09-06 09:43:28,561 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:43:32,453 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:43:38,933 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 09:43:42,531 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 09:43:43,847 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 09:43:45,461 django.server INFO "GET /Ramen/db_index00/?count=1 HTTP/1.1" 200 1074
+2024-09-06 09:43:50,999 django.server INFO "POST /Ramen/db_index00/ HTTP/1.1" 302 0
+2024-09-06 09:43:51,222 django.server INFO "GET /Ramen/index05/1/20190118/ HTTP/1.1" 200 1544
+2024-09-06 09:43:56,312 django.server INFO "GET /Ramen/?count=1 HTTP/1.1" 200 1676
+2024-09-06 09:44:11,650 django.server INFO "GET /init/ HTTP/1.1" 200 1670
+2024-09-06 13:02:49,486 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 13:02:51,986 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 13:02:52,066 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 13:02:52,067 django.server INFO "GET /static/css/style%2002.css HTTP/1.1" 200 5018
+2024-09-06 13:02:52,071 django.server INFO "GET /static/img/touth-white-17-18.png HTTP/1.1" 200 5213
+2024-09-06 13:02:52,073 django.server INFO "GET /static/img/shopping-white.png HTTP/1.1" 200 10009
+2024-09-06 13:02:52,438 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 13:02:57,059 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 13:02:57,105 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 13:02:57,108 django.server INFO "GET /static/css/style%2004.css HTTP/1.1" 200 7631
+2024-09-06 13:02:57,124 django.server INFO "GET /static/img/left.png HTTP/1.1" 200 7733
+2024-09-06 13:02:57,126 django.server INFO "GET /static/img/right-plus.png HTTP/1.1" 200 7788
+2024-09-06 13:02:57,128 django.server INFO "GET /static/img/again.png HTTP/1.1" 200 9408
+2024-09-06 13:02:57,134 django.server INFO "GET /static/js/order_count.js HTTP/1.1" 200 1010
+2024-09-06 13:02:57,135 django.server INFO "GET /static/img/check.png HTTP/1.1" 200 10761
+2024-09-06 13:02:57,390 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 13:03:00,621 django.server INFO "GET /Ramen/ HTTP/1.1" 200 1676
+2024-09-06 13:03:00,848 django.server INFO "GET /static/img/ABIMAN-CI-bagic.png HTTP/1.1" 200 10572
+2024-09-06 13:03:00,852 django.server INFO "GET /static/img/touth-black.png HTTP/1.1" 200 5557
+2024-09-06 13:03:00,852 django.server INFO "GET /static/css/style.css HTTP/1.1" 200 5113
+2024-09-06 13:03:00,854 django.server INFO "GET /static/img/fork-white.png HTTP/1.1" 200 6848
+2024-09-06 13:03:02,039 django.server INFO "GET /static/img/kitchen-bg.jpg HTTP/1.1" 200 17019309
+2024-09-06 13:03:28,290 django.server INFO "GET /Ramen/index02/ HTTP/1.1" 200 2078
+2024-09-06 13:03:28,360 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 13:03:28,362 django.server INFO "GET /static/css/style%2002.css HTTP/1.1" 200 5018
+2024-09-06 13:03:28,375 django.server INFO "GET /static/img/touth-white-17-18.png HTTP/1.1" 200 5213
+2024-09-06 13:03:28,379 django.server INFO "GET /static/img/shopping-white.png HTTP/1.1" 200 10009
+2024-09-06 13:03:28,654 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 13:04:01,167 django.server INFO "GET /Ramen/index04/ HTTP/1.1" 200 2201
+2024-09-06 13:04:01,248 django.server INFO "GET /static/img/ABIMAN-CI-white.png HTTP/1.1" 200 10874
+2024-09-06 13:04:01,251 django.server INFO "GET /static/img/left.png HTTP/1.1" 200 7733
+2024-09-06 13:04:01,252 django.server INFO "GET /static/css/style%2004.css HTTP/1.1" 200 7631
+2024-09-06 13:04:01,255 django.server INFO "GET /static/img/right-plus.png HTTP/1.1" 200 7788
+2024-09-06 13:04:01,258 django.server INFO "GET /static/img/again.png HTTP/1.1" 200 9408
+2024-09-06 13:04:01,267 django.server INFO "GET /static/js/order_count.js HTTP/1.1" 200 1010
+2024-09-06 13:04:01,267 django.server INFO "GET /static/img/check.png HTTP/1.1" 200 10761
+2024-09-06 13:04:01,546 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 13:04:12,278 django.server INFO "GET /Ramen/db_index00/?count=1 HTTP/1.1" 200 1074
+2024-09-06 13:04:12,486 django.server INFO "GET /static/css/db_style00.css HTTP/1.1" 200 2257
+2024-09-06 13:04:12,938 django.server INFO "GET /static/img/raman-03.jpg HTTP/1.1" 200 4110880
+2024-09-06 13:07:38,481 django.server INFO "GET /admin/ HTTP/1.1" 302 0
+2024-09-06 13:07:38,555 django.server INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2406
+2024-09-06 13:07:38,636 django.server INFO "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+2024-09-06 13:07:38,640 django.server INFO "GET /static/admin/css/login.css HTTP/1.1" 200 939
+2024-09-06 13:07:38,640 django.server INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+2024-09-06 13:07:38,642 django.server INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+2024-09-06 13:07:38,643 django.server INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+2024-09-06 13:07:38,656 django.server INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2024-09-06 13:07:38,759 django.server INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2024-09-06 13:07:38,774 django.server INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2024-09-06 13:07:38,775 django.server INFO "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2024-09-06 13:07:42,541 django.server INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2580
+2024-09-06 13:07:44,711 django.server INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2580
+2024-09-06 13:14:16,007 django.server INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2024-09-06 13:14:16,045 django.server INFO "GET /admin/ HTTP/1.1" 200 3349
+2024-09-06 13:14:16,066 django.server INFO "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+2024-09-06 13:14:16,122 django.server INFO "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-09-06 13:14:16,123 django.server INFO "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-09-06 13:15:12,836 django.utils.autoreload INFO /app/Ramen/admin.py changed, reloading.
+2024-09-06 13:15:13,433 django.utils.autoreload INFO Watching for file changes with StatReloader
+2024-09-06 13:20:20,484 django.server INFO "GET /admin/ HTTP/1.1" 200 4002
+2024-09-06 13:20:21,607 django.server INFO "GET /admin/Ramen/mymodel/ HTTP/1.1" 200 7280
+2024-09-06 13:20:21,667 django.server INFO "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+2024-09-06 13:20:21,668 django.server INFO "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+2024-09-06 13:20:21,668 django.server INFO "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-09-06 13:20:21,678 django.server INFO "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+2024-09-06 13:20:21,682 django.server INFO "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+2024-09-06 13:20:21,684 django.server INFO "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2024-09-06 13:20:21,689 django.server INFO "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-09-06 13:20:21,689 django.server INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8176
+2024-09-06 13:20:21,694 django.server INFO "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-09-06 13:20:21,701 django.server INFO "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+2024-09-06 13:20:21,701 django.server INFO "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-09-06 13:20:21,739 django.server INFO "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-09-06 13:20:36,340 django.server INFO "GET /admin/Ramen/mymodel/?q=2 HTTP/1.1" 200 7417
+2024-09-06 13:20:36,367 django.server INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8176
+2024-09-06 13:20:37,667 django.server INFO "GET /admin/Ramen/mymodel/?q=2 HTTP/1.1" 200 7417
+2024-09-06 13:20:37,704 django.server INFO "GET /admin/jsi18n/ HTTP/1.1" 200 8176
