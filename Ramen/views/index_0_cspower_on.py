@@ -5,7 +5,7 @@ from _thread import *
 
 
 def cs_poweron(request):
-    print(": 초기협동부팅")
+    print("초기협동부팅")
     ip='192.168.1.20'
     port=29999  #29999 직접 제어
 
@@ -23,13 +23,13 @@ def cs_poweron(request):
 
     data="robotControl -on"
     data=data+"\n"
-    print(": 협동전원 On")
+    print("협동전원 On")
 
     client_socket.sendall(data.encode())
     time.sleep(10)
     data="brakeRelease"+"\n"
     client_socket.sendall(data.encode())
-    print(": 협동브레이크 off")
+    print("협동브레이크 off")
 
 
     return render(request, './ramen/init_cs_power.html')

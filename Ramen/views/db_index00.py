@@ -4,6 +4,8 @@ from django.contrib import messages
 from ..models import MyModel  # 상위 디렉토리의 models.py 파일에서 MyModel을 가져옵니다
 from django.contrib.messages import get_messages
 
+import logging
+
 def login_view(request):
     if request.method == 'POST':
         employee_id = request.POST.get('employee_id')
@@ -38,6 +40,9 @@ def login_view(request):
                 count=count
             )
             my_model_instance.save()
+            # print('사번:',employee_id, user.first_name,'주문수량:', count)
+            logger = logging.getLogger('my_custom_logger')
+            logger.info('사번: %s, 이름: %s, 주문수량: %d', employee_id, user.first_name, count)
 
             # 사번과 count 값을 index05로 넘김
             return redirect('Ramen:index05', count=count, employee_id=employee_id)  # 로그인 성공 시 index05로 리디렉션

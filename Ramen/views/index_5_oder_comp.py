@@ -7,7 +7,7 @@ mainPlc = ModbusClient(host=plc_ip, unit_id=1, auto_open=True, auto_close=True)
 
 def manual_oder_complete(request, count, employee_id):
     plc_oder_count = int(count)
-    print(": 주문수량 :", plc_oder_count)
+    # print("라면 주문수량 :", plc_oder_count)
     
     # PLC 명령 전송
     mainPlc.write_multiple_registers(5010, [40])
